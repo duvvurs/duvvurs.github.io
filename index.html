@@ -23,7 +23,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--navy:#0f172a;--navy-mid:#1e293b;--accent:#0078d4;--accent-hover:#005a9e;--accent-glow:rgba(0,120,212,0.12);--green:#059669;--green-bg:#ecfdf5;--amber:#d97706;--amber-bg:#fffbeb;--text:#1e293b;--text2:#475569;--text-m:#94a3b8;--bg:#fff;--bg-alt:#f8fafc;--bg-sub:#f1f5f9;--border:#e2e8f0;--border-l:#f1f5f9;--shadow-xs:0 1px 2px rgba(0,0,0,0.04);--shadow-sm:0 1px 3px rgba(0,0,0,0.06);--shadow-md:0 4px 12px rgba(0,0,0,0.08);--r:10px;--r-sm:6px;--max-w:940px;--font:'Inter',-apple-system,BlinkMacSystemFont,system-ui,sans-serif}
+    :root{--navy:#0f172a;--navy-mid:#1e293b;--accent:#005a9e;--accent-hover:#004578;--accent-glow:rgba(0,90,158,0.13);--green:#047857;--green-bg:#ecfdf5;--amber:#b45309;--amber-bg:#fffbeb;--text:#0f172a;--text2:#334155;--text-m:#64748b;--bg:#fff;--bg-alt:#f6f8fb;--bg-sub:#eef2f7;--border:#cbd5e1;--border-l:#e2e8f0;--shadow-xs:0 1px 2px rgba(15,23,42,0.05);--shadow-sm:0 1px 4px rgba(15,23,42,0.08);--shadow-md:0 4px 12px rgba(15,23,42,0.10);--r:10px;--r-sm:6px;--max-w:940px;--font:'Inter',-apple-system,BlinkMacSystemFont,system-ui,sans-serif}
     [data-theme="dark"]{--text:#f1f5f9;--text2:#cbd5e1;--text-m:#64748b;--bg:#0f172a;--bg-alt:#1e293b;--bg-sub:#334155;--border:#334155;--border-l:#1e293b;--green-bg:rgba(5,150,105,0.12);--amber-bg:rgba(217,119,6,0.12);--accent-glow:rgba(56,189,248,0.1)}
     html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
     body{font-family:var(--font);color:var(--text);background:var(--bg-alt);line-height:1.7;font-size:15px;transition:background .2s,color .2s;overflow-x:hidden}
@@ -49,22 +49,22 @@
     .hero::before{content:'';position:absolute;top:-40%;right:-15%;width:500px;height:500px;background:radial-gradient(circle,rgba(0,120,212,0.07) 0%,transparent 70%);pointer-events:none}
     .hero-in{max-width:var(--max-w);margin:0 auto;position:relative}
     .hero-grid{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
-    .badge{display:inline-flex;align-items:center;gap:6px;background:rgba(0,120,212,0.15);border:1px solid rgba(0,120,212,0.3);color:#7dd3fc;padding:5px 14px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-bottom:20px}
+    .badge{display:inline-flex;align-items:center;gap:6px;background:rgba(0,120,212,0.20);border:1px solid rgba(125,211,252,0.45);color:#bae6fd;padding:5px 14px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-bottom:20px}
     .badge svg{width:12px;height:12px;fill:currentColor;flex-shrink:0}
     .hero h1{font-size:40px;font-weight:800;letter-spacing:-.8px;line-height:1.15;margin-bottom:8px}
-    .tagline{font-size:19px;color:#94a3b8;font-weight:400;margin-bottom:8px}
-    .sub-tag{font-size:14px;color:#64748b;max-width:620px;line-height:1.6}
+    .tagline{font-size:19px;color:#dbeafe;font-weight:500;margin-bottom:8px}
+    .sub-tag{font-size:14px;color:#cbd5e1;max-width:620px;line-height:1.6}
     .hero-qr{display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--r)}
     .hero-qr img{width:100px;height:100px;border-radius:var(--r-sm)}
-    .hero-qr span{font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:.6px;font-weight:500}
+    .hero-qr span{font-size:10px;color:#cbd5e1;text-transform:uppercase;letter-spacing:.6px;font-weight:600}
     .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
     .stat{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--r);padding:14px 18px;text-align:center;transition:all .2s}
     .stat:hover{background:rgba(255,255,255,0.08);border-color:rgba(0,120,212,0.3)}
     .stat .n{font-size:28px;font-weight:800;line-height:1.1;min-height:34px;display:flex;align-items:center;justify-content:center}
     .stat .n.g{color:#34d399}.stat .n.b{color:#38bdf8}.stat .n.a{color:#fbbf24}
-    .stat .l{font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.5px;font-weight:600;margin-top:4px}
+    .stat .l{font-size:10px;color:#cbd5e1;text-transform:uppercase;letter-spacing:.5px;font-weight:700;margin-top:4px}
     .contacts{display:flex;gap:12px 20px;margin-top:24px;flex-wrap:wrap;font-size:13px;align-items:center}
-    .contacts a,.contacts span{color:#94a3b8;display:inline-flex;align-items:center;gap:6px;transition:color .2s;white-space:nowrap}
+    .contacts a,.contacts span{color:#dbeafe;display:inline-flex;align-items:center;gap:6px;transition:color .2s;white-space:nowrap}
     .contacts a:hover{color:#f8fafc}
     .contacts svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}
 
@@ -111,7 +111,7 @@
     .comp h3{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--accent);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border-l)}
     .comp ul{list-style:none;display:flex;flex-direction:column;gap:9px}
     .comp li{font-size:13px;color:var(--text2);display:grid;grid-template-columns:5px minmax(0,1fr);align-items:start;column-gap:10px;line-height:1.45}
-    .comp li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.7;margin-top:7px}
+    .comp li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:1;margin-top:7px}
     .comp li span{display:block;min-width:0;text-wrap:pretty}
     .comp li strong{display:block;color:var(--text);font-weight:650}
     .comp li em{display:block;font-style:normal;color:var(--text2);font-weight:400}
@@ -197,62 +197,46 @@
       .sh h2{font-size:12px}
     }
 
-    /* ── Print — engineered for 2-page PDF ────────────────── */
+    /* ── Recruiter PDF export — purpose-built print resume ─── */
+    .pdf-resume{display:none}
     @media print{
-      @page{margin:0.6cm 1cm}
-      .ubar,.btt,.hamburger,.mobile-nav,.hero-qr,.sh-icon,.badge,.contacts,.method,#testimonials,#achievements,footer{display:none!important}
-      .reveal{opacity:1!important;transform:none!important;transition:none!important}
-      *{transition:none!important;animation:none!important}
-      .hero{margin-top:0!important;padding:8px 0 4px!important;background:#fff!important;color:#000!important;overflow:visible!important}
-      .hero::before{display:none!important}
-      .hero h1{font-size:15px!important;color:#000!important;margin-bottom:1px!important}
-      .tagline{font-size:9px!important;color:#333!important;margin-bottom:0!important}
-      .sub-tag{display:none!important}
-      .stats{grid-template-columns:repeat(4,1fr)!important;gap:4px!important;margin-top:3px!important}
-      .stat{background:#f8f9fa!important;border:1px solid #ddd!important;padding:2px 4px!important}
-      .stat .n{font-size:11px!important;color:#000!important;min-height:auto!important}
-      .stat .l{color:#555!important;font-size:5.5px!important;margin-top:1px!important}
-      body{background:#fff!important;font-size:8px!important;color:#1a1a1a!important;line-height:1.35!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-      .content{padding:0 0 2px!important;max-width:100%!important}
-      .section{margin-bottom:4px!important;break-inside:avoid;page-break-inside:avoid}
-      .sh{margin-bottom:3px!important}
-      .sh h2{font-size:7px!important;color:#0078d4!important}
-      .card,.ach,.comp,.cert,.edu{box-shadow:none!important;border:1px solid #ddd!important;padding:4px 6px!important}
-      .ach-grid{gap:4px!important}
-      .comp-grid{gap:4px!important;grid-template-columns:1fr 1fr!important}
-      .comp h3{font-size:7px!important;margin-bottom:2px!important;padding-bottom:2px!important}
-      .comp li{font-size:7.5px!important;gap:3px!important;line-height:1.3!important}
-      .comp li::before{margin-top:3px;width:3px;height:3px}
-      .summary{font-size:8px!important;line-height:1.35!important}
-      .ach .an{font-size:14px!important}
-      .ach .al{font-size:7px!important}
-      .ach .ad{font-size:7.5px!important;line-height:1.3!important}
-      .bullets{gap:2px!important}
-      .bullets li{font-size:8px!important;line-height:1.3!important;padding-left:11px!important}
-      .bullets li::before{font-size:10px!important}
-      .timeline{padding-left:18px!important}
-      .timeline::before{left:6px!important;top:5px!important;bottom:5px!important;width:1px!important;background:#ccc!important}
-      .tl-item{margin-bottom:8px!important}
-      .tl-item::before{left:-15px!important;width:7px!important;height:7px!important;border-width:1.5px!important}
-      .tl-item.current::before{box-shadow:none!important}
-      .tl-company{font-size:9px!important}
-      .tl-role{font-size:8px!important}
-      .tl-meta{margin-bottom:3px!important;gap:4px!important}
-      .tl-date{font-size:6.5px!important;padding:1px 4px!important}
-      .tl-loc{font-size:7px!important}
-      .tl-sub{margin-bottom:4px!important;padding-bottom:3px!important}
-      .tl-sub-t{font-size:8px!important;margin-bottom:2px!important}
-      .bdg{font-size:5.5px!important;padding:1px 4px!important}
-      .cert-grid{grid-template-columns:repeat(4,1fr)!important;gap:3px!important}
-      .cert{padding:3px 5px!important}
-      .cert-name{font-size:7.5px!important}
-      .cert-org{font-size:6.5px!important}
-      .cert-ip{font-size:6px!important}
-      .edu{padding:4px 6px!important}
-      .edu-d{font-size:9px!important}
-      .edu-s,.edu-y{font-size:7.5px!important}
+      @page{size:A4;margin:0.42in 0.48in}
+      html,body{background:#fff!important;color:#111827!important;font-family:Arial,Helvetica,sans-serif!important;font-size:9pt!important;line-height:1.27!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      .ubar,.mobile-nav,.hero,.content,footer,.btt,#toast{display:none!important}
+      .pdf-resume{display:block!important;max-width:none!important;margin:0!important;padding:0!important;background:#fff!important;color:#111827!important}
+      .pdf-resume *{box-shadow:none!important;text-shadow:none!important;animation:none!important;transition:none!important}
+      .pdf-top{border-bottom:2px solid #003e73;padding-bottom:7pt;margin-bottom:7pt}
+      .pdf-name{font-size:21pt;line-height:1;font-weight:800;letter-spacing:-.25pt;color:#0b1220;margin:0 0 2pt}
+      .pdf-title{font-size:10.8pt;font-weight:700;color:#003e73;margin:0 0 4pt}
+      .pdf-contact{font-size:8.05pt;color:#1f2937;display:block;line-height:1.25}
+      .pdf-contact a{color:#1f2937!important;text-decoration:none!important}
+      .pdf-impact{display:grid;grid-template-columns:repeat(4,1fr);gap:5pt;margin:7pt 0 7pt}
+      .pdf-impact div{border:1px solid #9fb4c8;background:#eef5fb;padding:4pt 5pt;min-height:30pt}
+      .pdf-impact strong{display:block;font-size:12.2pt;line-height:1.05;color:#003e73;font-weight:800}
+      .pdf-impact span{display:block;font-size:6.5pt;line-height:1.1;color:#374151;text-transform:uppercase;font-weight:700;margin-top:2pt}
+      .pdf-section{margin:7pt 0 0;break-inside:avoid;page-break-inside:avoid}
+      .pdf-section h2{font-size:8.4pt;text-transform:uppercase;color:#003e73;border-bottom:1px solid #9fb4c8;margin:0 0 4pt;padding-bottom:2pt;font-weight:800}
+      .pdf-summary{font-size:8.75pt;line-height:1.34;margin:0;color:#1f2937}
+      .pdf-summary strong,.pdf-resume li strong{color:#111827;font-weight:800}
+      .pdf-skills{display:grid;grid-template-columns:repeat(3,1fr);gap:6pt;font-size:7.65pt;line-height:1.24}
+      .pdf-skill{break-inside:avoid}
+      .pdf-skill h3{font-size:7.8pt;line-height:1.15;color:#111827;margin:0 0 2pt;font-weight:800}
+      .pdf-skill p{margin:0;color:#1f2937}
+      .pdf-job{break-inside:avoid;page-break-inside:avoid;margin-top:6pt}
+      .pdf-job-head{display:flex;justify-content:space-between;gap:10pt;border-bottom:1px solid #d1d5db;padding-bottom:2pt;margin-bottom:3pt}
+      .pdf-company{font-size:10pt;font-weight:800;color:#111827;line-height:1.15}
+      .pdf-role{font-size:8.4pt;color:#003e73;font-weight:800;line-height:1.2;margin-top:1pt}
+      .pdf-date{font-size:7.6pt;color:#374151;text-align:right;white-space:nowrap;line-height:1.25}
+      .pdf-subrole{font-size:8.15pt;font-weight:800;margin:4pt 0 1.5pt;color:#111827}
+      .pdf-tag{color:#003e73;font-weight:800}
+      .pdf-resume ul{margin:0 0 0 12pt;padding:0}
+      .pdf-resume li{margin:1.35pt 0;font-size:8pt;line-height:1.25;color:#1f2937;padding-left:0}
+      .pdf-two{display:grid;grid-template-columns:1fr 1fr;gap:9pt;align-items:start}
+      .pdf-compact-list li{font-size:7.8pt;line-height:1.23;margin:1.1pt 0}
+      .pdf-page-break{break-before:page;page-break-before:always;margin-top:0!important}
+      .pdf-note{font-size:7.6pt;color:#374151;margin-top:4pt;border-top:1px solid #d1d5db;padding-top:3pt}
+      .pdf-footer-line{font-size:7.4pt;color:#4b5563;margin-top:6pt;text-align:center;border-top:1px solid #d1d5db;padding-top:3pt}
       a{color:inherit!important;text-decoration:none!important}
-      [data-theme="dark"]{--bg:#fff;--text:#1a1a1a;--text2:#475569;--text-m:#999;--border:#ddd;--border-l:#eee;--bg-sub:#f5f5f5;--accent-glow:rgba(0,120,212,0.08);--green-bg:#ecfdf5;--amber-bg:#fffbeb}
     }
   </style>
 </head>
@@ -278,9 +262,9 @@
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
       </button>
       <button class="btn btn-o" id="contactBtn" onclick="copyContact()">Contact</button>
-      <button class="btn btn-p" onclick="window.print()">
+      <a class="btn btn-p" href="Duvvur-Sai-Krishna-Resume.pdf" download aria-label="Download PDF resume">
         <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align:-2px;margin-right:3px"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>PDF
-      </button>
+      </a>
     </div>
   </nav>
 
@@ -527,6 +511,134 @@
   <footer style="text-align:center;padding:32px 24px;font-size:12px;color:var(--text-m);border-top:1px solid var(--border);max-width:var(--max-w);margin:0 auto">
     © 2026 Duvvur Sai Krishna · <a href="https://github.com/duvvurs" target="_blank">View Portfolio on GitHub</a>
   </footer>
+
+
+  <!-- Recruiter-friendly PDF export. Hidden on screen; used for print and generated PDF. -->
+  <main class="pdf-resume" aria-label="Recruiter PDF resume">
+    <header class="pdf-top">
+      <h1 class="pdf-name">Duvvur Sai Krishna</h1>
+      <p class="pdf-title">Senior Azure FinOps Engineer — Cloud Infrastructure &amp; Cost Governance</p>
+      <div class="pdf-contact">
+        Belgium · Open to EU / UK / Remote · <a href="tel:+32465430680">+32 465 43 0680</a> · <a href="mailto:duvvurs@outlook.com">duvvurs@outlook.com</a> · <a href="https://www.linkedin.com/in/duvvur-sai-krishna-reddy-7a593663">linkedin.com/in/duvvur-sai-krishna-reddy-7a593663</a><br>
+        English C1 · Telugu Native
+      </div>
+    </header>
+
+    <section class="pdf-impact" aria-label="Impact summary">
+      <div><strong>12+</strong><span>Years cloud / data / Azure</span></div>
+      <div><strong>£624K/yr</strong><span>Annualised Azure savings</span></div>
+      <div><strong>3,000+</strong><span>Azure resources governed</span></div>
+      <div><strong>6+</strong><span>Years FinOps execution</span></div>
+    </section>
+
+    <section class="pdf-section">
+      <h2>Professional Summary</h2>
+      <p class="pdf-summary">Azure FinOps engineer with <strong>12+ years</strong> across cloud infrastructure, data analytics, and financial governance — including 5 years building Azure environments and 6+ years optimising them. Delivered <strong>£624K annualised savings</strong> for a UK water utility through Azure architecture redesign and FinOps practice implementation. Built <strong>showback/chargeback frameworks</strong>, <strong>Power BI cost analytics</strong>, and governance controls for a European insurer managing <strong>3,000+ Azure resources</strong>. Strong Azure commercial understanding from Microsoft-side consulting: EA/MCA/CSP licensing, commitment models, resource economics, and FinOps lifecycle execution.</p>
+    </section>
+
+    <section class="pdf-section">
+      <h2>Core Competencies</h2>
+      <div class="pdf-skills">
+        <div class="pdf-skill"><h3>FinOps &amp; Governance</h3><p>Azure Cost Management &amp; Billing · Budgeting &amp; forecasting · Anomaly detection · Reserved Instances · Azure Savings Plans · Showback / chargeback · Allocation · Tagging governance · Azure Policy · Unit economics · EA / MCA / CSP · GreenOps</p></div>
+        <div class="pdf-skill"><h3>Azure Infrastructure</h3><p>IaaS &amp; PaaS administration · Azure SQL · VMs · Storage · Networking · Backups · Azure Policy · RBAC · Management Groups · AKS cost allocation · HA / DR architecture · Cloud migration · Modernisation</p></div>
+        <div class="pdf-skill"><h3>Analytics &amp; Automation</h3><p>Power BI cost dashboards · Azure Cost APIs · KQL / Kusto Query · ARM Templates · Bicep · Terraform · PowerShell · Python scripting · Azure Data Factory · PowerApps · Power Automate · Dynamics CRM · SharePoint</p></div>
+      </div>
+    </section>
+
+    <section class="pdf-section">
+      <h2>Selected Impact</h2>
+      <ul class="pdf-compact-list">
+        <li><strong>£624K/year Azure cost reduction:</strong> redesigned architecture, policy, rightsizing, and chargeback controls for a UK water services organisation.</li>
+        <li><strong>3,000+ Azure resources governed:</strong> managed FinOps operations across European insurance and UK utility clients using Azure Policy, RBAC, Management Groups, and reporting cadences.</li>
+        <li><strong>Executive-recognised delivery:</strong> contributed to an application recognised by Microsoft CEO Satya Nadella, demonstrating production-grade Azure solution delivery.</li>
+      </ul>
+    </section>
+
+    <section class="pdf-section pdf-job">
+      <div class="pdf-job-head">
+        <div><div class="pdf-company">Infosys Limited</div><div class="pdf-role">Senior FinOps Engineer &amp; Cloud Consultant</div></div>
+        <div class="pdf-date">July 2018 – Present<br>India / Client-site Europe</div>
+      </div>
+
+      <div class="pdf-subrole">European Insurance Client — Cloud Financial Governance <span class="pdf-tag">| FinOps Practice Build</span></div>
+      <ul>
+        <li>Established FinOps practices for a European insurance organisation across multi-subscription Azure environments with significant annual cloud spend under management.</li>
+        <li>Built Power BI dashboards using Azure Cost Management APIs to provide engineering, finance, and leadership stakeholders with cost visibility, trend analysis, and anomaly detection.</li>
+        <li>Implemented showback/chargeback models using tagging, labels, and custom dimensions to make spend transparent and attributable across business units.</li>
+        <li>Created budgeting, forecasting, and alerting frameworks with monthly review cadence, enabling proactive cost control and earlier anomaly response.</li>
+        <li>Executed rightsizing and commitment optimisation across compute, storage, backup, and networking; managed Reserved Instances and Azure Savings Plans coverage.</li>
+        <li>Improved tagging compliance and resource attribution through Azure Policy and governance controls across subscriptions.</li>
+      </ul>
+
+      <div class="pdf-subrole">UK Water Services Client — Cloud Cost Transformation <span class="pdf-tag">| £624K/year savings</span></div>
+      <ul>
+        <li>Redesigned Azure architecture and governance policies to deliver <strong>£52K/month (£624K annualised)</strong> savings through rightsizing, policy optimisation, and removal of waste.</li>
+        <li>Implemented chargeback mechanisms that attributed cloud costs to projects and increased engineering ownership of cloud spend.</li>
+        <li>Assessed over-provisioned, idle, and orphaned resources, then aligned new workloads to cost-efficient architecture and pricing models from inception.</li>
+      </ul>
+
+      <div class="pdf-subrole">Cross-Client FinOps Operations <span class="pdf-tag">| 3,000+ Azure resources</span></div>
+      <ul>
+        <li>Led day-to-day Azure governance across multiple international clients, managing Azure Policy, RBAC, Management Groups, and cloud operations controls.</li>
+        <li>Partnered with engineering, finance, and leadership teams to align cloud investment with business objectives through recurring cost reviews and actionable recommendations.</li>
+      </ul>
+    </section>
+
+    <section class="pdf-section pdf-job pdf-page-break">
+      <div class="pdf-job-head">
+        <div><div class="pdf-company">PALS Global Solutions / Microsoft India</div><div class="pdf-role">Cloud Infrastructure Consultant &amp; Azure Technical Specialist</div></div>
+        <div class="pdf-date">March 2013 – July 2018<br>India</div>
+      </div>
+
+      <div class="pdf-subrole">Microsoft India — External Cloud Technical Consultant</div>
+      <ul>
+        <li>Seconded to Microsoft India through PALS partnership to demonstrate Azure capabilities and guide SME customers through cloud adoption.</li>
+        <li>Developed vendor-side understanding of Azure pricing models, EA/MCA licensing, commercial constructs, and resource selection trade-offs.</li>
+        <li>Presented Power BI dashboards for cost visibility and advised customers on budgeting, rightsizing, and commitment model options before migration.</li>
+        <li>Enabled Azure DevOps practices and PaaS adoption, helping customers modernise while reducing infrastructure ownership costs.</li>
+      </ul>
+
+      <div class="pdf-subrole">PALS Global Solutions — Cloud Infrastructure &amp; Data Engineering</div>
+      <ul>
+        <li>Provisioned and managed Azure IaaS/PaaS environments, including high availability and disaster recovery architectures.</li>
+        <li>Designed and administered Azure SQL PaaS — Single Database, Elastic Pools, Geo-Replication — with scale-up/scale-down automation for performance and cost efficiency.</li>
+        <li>Led on-premises to Azure SQL migrations with performance, security, and cost optimisation considerations.</li>
+        <li>Built Power BI dashboards for global clients and Government of India organisations; delivered Azure AI services and Power Platform automation.</li>
+      </ul>
+    </section>
+
+    <section class="pdf-section pdf-job">
+      <div class="pdf-job-head">
+        <div><div class="pdf-company">Earlier Experience</div><div class="pdf-role">Software Engineer / Database Developer / CRM &amp; SharePoint Analyst</div></div>
+        <div class="pdf-date">2011 – 2013<br>India</div>
+      </div>
+      <ul>
+        <li>Built foundation in SQL, MySQL, SharePoint, Microsoft Dynamics CRM, application support, and reporting for enterprise and education clients.</li>
+      </ul>
+    </section>
+
+    <section class="pdf-section pdf-two">
+      <div>
+        <h2>Certifications</h2>
+        <ul class="pdf-compact-list">
+          <li>FinOps Certified Practitioner — FinOps Foundation <strong>(In Progress, Est. Q3 2026)</strong></li>
+          <li>Microsoft Certified: Azure Administrator — Microsoft</li>
+          <li>Implementing Microsoft Azure Infrastructure Solutions — Microsoft Specialist</li>
+          <li>Microsoft Certified Professional (MCP) — Microsoft</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Education</h2>
+        <ul class="pdf-compact-list">
+          <li>Bachelor of Engineering — Computer Science &amp; Engineering</li>
+          <li>Anna University, Chennai, India — 2011</li>
+        </ul>
+        <p class="pdf-note">Target roles: Senior FinOps Engineer · Cloud Cost Engineer · Azure FinOps Consultant · Cloud Governance / Cost Optimisation Lead</p>
+      </div>
+    </section>
+
+    <div class="pdf-footer-line">Live portfolio: duvvurs.github.io · GitHub: github.com/duvvurs · References available on request</div>
+  </main>
 
   <!-- Back to Top -->
   <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">

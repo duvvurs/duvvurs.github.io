@@ -2,6 +2,9 @@
 
 > 📍 Belgium · Open to EU/UK/Remote · 📞 +32 465 43 0680 · ✉️ duvvurs@outlook.com · 🗣️ English C1, Telugu Native
 
+**Live resume:** https://duvvurs.github.io/  
+**Recruiter PDF:** https://duvvurs.github.io/Duvvur-Sai-Krishna-Resume.pdf
+
 ---
 
 ## Professional Summary
