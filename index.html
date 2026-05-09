@@ -106,13 +106,15 @@
     .m-arrow svg{width:20px;height:20px;fill:currentColor}
 
     /* ── Competency Grid — equal columns ──────────────────── */
-    .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+    .comp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
     .comp{padding:24px}
     .comp h3{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--accent);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border-l)}
-    .comp ul{list-style:none;display:flex;flex-direction:column;gap:7px}
-    .comp li{font-size:13px;color:var(--text2);display:flex;align-items:flex-start;gap:8px;line-height:1.5}
-    .comp li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;opacity:.7;margin-top:7px}
-    .comp li strong{color:var(--text);font-weight:600}
+    .comp ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+    .comp li{font-size:13px;color:var(--text2);display:grid;grid-template-columns:5px minmax(0,1fr);align-items:start;column-gap:10px;line-height:1.45}
+    .comp li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.7;margin-top:7px}
+    .comp li span{display:block;min-width:0;text-wrap:pretty}
+    .comp li strong{display:block;color:var(--text);font-weight:650}
+    .comp li em{display:block;font-style:normal;color:var(--text2);font-weight:400}
 
     /* ── Timeline — precise dot-line alignment ────────────── */
     .timeline{position:relative;padding-left:36px}
@@ -181,6 +183,8 @@
     @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.stat,.ach,.card{transition:none}}
 
     /* ── Responsive ───────────────────────────────────────── */
+    @media(max-width:980px){.comp-grid{grid-template-columns:1fr}}
+
     @media(max-width:768px){
       .hero h1{font-size:28px}.tagline{font-size:16px}.hero-grid{grid-template-columns:1fr}.hero-qr{display:none}
       .stats{grid-template-columns:repeat(2,1fr);gap:8px}.stat .n{font-size:22px}.stat .l{font-size:9px}.stat{padding:10px 12px}
@@ -376,35 +380,35 @@
       <div class="sh"><div class="sh-icon"><svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></div><h2>Core Competencies</h2></div>
       <div class="comp-grid">
         <div class="card comp"><h3>FinOps &amp; Governance</h3><ul>
-          <li><strong>Azure Cost Management</strong> &amp; Billing</li>
-          <li><strong>Budgeting, Forecasting</strong> &amp; Anomaly Detection</li>
-          <li><strong>Reserved Instances</strong> &amp; Azure Savings Plans</li>
-          <li><strong>Showback / Chargeback</strong> / Allocation</li>
-          <li><strong>Tagging Governance</strong> &amp; Azure Policy</li>
-          <li><strong>Unit Economics</strong> &amp; Cost per Workload</li>
-          <li><strong>FinOps Lifecycle</strong> (Inform → Optimize → Operate)</li>
-          <li><strong>EA / MCA / CSP</strong> Licensing Constructs</li>
-          <li><strong>GreenOps</strong> &amp; Carbon Optimization</li>
+          <li><span><strong>Azure Cost Management &amp; Billing</strong></span></li>
+          <li><span><strong>Budgeting &amp; Forecasting</strong><em>Anomaly detection</em></span></li>
+          <li><span><strong>Reserved Instances &amp; Savings Plans</strong><em>Azure commitment optimisation</em></span></li>
+          <li><span><strong>Showback, Chargeback &amp; Allocation</strong></span></li>
+          <li><span><strong>Tagging Governance &amp; Azure Policy</strong></span></li>
+          <li><span><strong>Unit Economics</strong><em>Cost per workload</em></span></li>
+          <li><span><strong>FinOps Lifecycle</strong><em>Inform → Optimize → Operate</em></span></li>
+          <li><span><strong>EA / MCA / CSP</strong><em>Licensing constructs</em></span></li>
+          <li><span><strong>GreenOps &amp; Carbon Optimization</strong></span></li>
         </ul></div>
         <div class="card comp"><h3>Azure Infrastructure</h3><ul>
-          <li><strong>IaaS &amp; PaaS</strong> Administration</li>
-          <li><strong>Azure SQL</strong> (Single, Elastic Pools, Geo-Rep)</li>
-          <li>VMs, Storage, Networking, Backups</li>
-          <li><strong>Azure Policy, RBAC</strong>, Management Groups</li>
-          <li><strong>AKS</strong> Cost Allocation &amp; Container FinOps</li>
-          <li>High Availability &amp; DR Architecture</li>
-          <li>Cloud Migration &amp; Modernization</li>
-          <li>Azure DevOps &amp; CI/CD Pipelines</li>
+          <li><span><strong>IaaS &amp; PaaS</strong><em>Administration</em></span></li>
+          <li><span><strong>Azure SQL</strong><em>Single DB, Elastic Pools, Geo-Rep</em></span></li>
+          <li><span><strong>VMs, Storage, Networking &amp; Backups</strong></span></li>
+          <li><span><strong>Azure Policy, RBAC &amp; Management Groups</strong></span></li>
+          <li><span><strong>AKS</strong><em>Cost allocation &amp; Container FinOps</em></span></li>
+          <li><span><strong>High Availability &amp; DR Architecture</strong></span></li>
+          <li><span><strong>Cloud Migration &amp; Modernization</strong></span></li>
+          <li><span><strong>Azure DevOps &amp; CI/CD Pipelines</strong></span></li>
         </ul></div>
         <div class="card comp"><h3>Analytics &amp; Automation</h3><ul>
-          <li><strong>Power BI</strong> Cost Dashboards &amp; Reporting</li>
-          <li><strong>Azure Cost APIs</strong> &amp; KQL (Kusto Query)</li>
-          <li><strong>ARM Templates, Bicep</strong> &amp; Terraform (IaC)</li>
-          <li><strong>PowerShell</strong> &amp; Python Scripting</li>
-          <li>Azure Data Factory &amp; MySQL</li>
-          <li>PowerApps &amp; Power Automate</li>
-          <li>Microsoft Dynamics CRM &amp; SharePoint</li>
-          <li>On-Premises to Cloud Data Migration</li>
+          <li><span><strong>Power BI</strong><em>Cost dashboards &amp; reporting</em></span></li>
+          <li><span><strong>Azure Cost APIs &amp; KQL</strong><em>Kusto Query</em></span></li>
+          <li><span><strong>ARM Templates, Bicep &amp; Terraform</strong><em>Infrastructure as Code</em></span></li>
+          <li><span><strong>PowerShell &amp; Python</strong><em>Scripting</em></span></li>
+          <li><span><strong>Azure Data Factory &amp; MySQL</strong></span></li>
+          <li><span><strong>PowerApps &amp; Power Automate</strong></span></li>
+          <li><span><strong>Microsoft Dynamics CRM &amp; SharePoint</strong></span></li>
+          <li><span><strong>On-Premises to Cloud Data Migration</strong></span></li>
         </ul></div>
       </div>
     </section>
