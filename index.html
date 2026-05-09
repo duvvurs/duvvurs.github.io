@@ -26,7 +26,8 @@
     :root{--navy:#0f172a;--navy-mid:#1e293b;--accent:#0078d4;--accent-hover:#005a9e;--accent-glow:rgba(0,120,212,0.12);--green:#059669;--green-bg:#ecfdf5;--amber:#d97706;--amber-bg:#fffbeb;--text:#1e293b;--text2:#475569;--text-m:#94a3b8;--bg:#fff;--bg-alt:#f8fafc;--bg-sub:#f1f5f9;--border:#e2e8f0;--border-l:#f1f5f9;--shadow-xs:0 1px 2px rgba(0,0,0,0.04);--shadow-sm:0 1px 3px rgba(0,0,0,0.06);--shadow-md:0 4px 12px rgba(0,0,0,0.08);--r:10px;--r-sm:6px;--max-w:940px;--font:'Inter',-apple-system,BlinkMacSystemFont,system-ui,sans-serif}
     [data-theme="dark"]{--text:#f1f5f9;--text2:#cbd5e1;--text-m:#64748b;--bg:#0f172a;--bg-alt:#1e293b;--bg-sub:#334155;--border:#334155;--border-l:#1e293b;--green-bg:rgba(5,150,105,0.12);--amber-bg:rgba(217,119,6,0.12);--accent-glow:rgba(56,189,248,0.1)}
     html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-    body{font-family:var(--font);color:var(--text);background:var(--bg-alt);line-height:1.7;font-size:15px;transition:background .2s,color .2s}
+    body{font-family:var(--font);color:var(--text);background:var(--bg-alt);line-height:1.7;font-size:15px;transition:background .2s,color .2s;overflow-x:hidden}
+    .hero{overflow:hidden}
     a{color:var(--accent);text-decoration:none}
     .skip{position:absolute;top:-100%;left:16px;background:var(--accent);color:#fff;padding:8px 16px;border-radius:var(--r-sm);z-index:200;font-weight:600}.skip:focus{top:8px}
 
@@ -185,7 +186,11 @@
     /* ── Responsive ───────────────────────────────────────── */
     @media(max-width:768px){
       .hero h1{font-size:28px}.tagline{font-size:16px}.hero-grid{grid-template-columns:1fr}.hero-qr{display:none}
-      .stats{grid-template-columns:repeat(2,1fr)}.stat .n{font-size:22px}
+      .stats{grid-template-columns:repeat(2,1fr);gap:8px}.stat .n{font-size:22px}.stat .l{font-size:9px}.stat{padding:10px 12px}
+      .contacts{gap:10px;font-size:12px}
+      .cert-grid{grid-template-columns:1fr 1fr}
+      .method .md{font-size:11px}
+      .method .mi{font-size:20px}
       .ach-grid,.comp-grid,.test-grid{grid-template-columns:1fr}
       .method{grid-template-columns:1fr;gap:8px}.m-arrow{transform:rotate(90deg)}
       .nav-l{display:none}.hamburger{display:block}
