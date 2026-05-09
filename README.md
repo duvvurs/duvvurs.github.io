@@ -1,20 +1,37 @@
 # Duvvur Sai Krishna — Senior Azure FinOps Engineer
 
-> Belgium / Open to EU/UK/Remote · +32 465 43 0680 · duvvurs@outlook.com · English C1, Telugu Native
+> 📍 Belgium · Open to EU/UK/Remote · 📞 +32 465 43 0680 · ✉️ duvvurs@outlook.com · 🗣️ English C1, Telugu Native
 
 ---
 
 ## Professional Summary
 
-Azure FinOps engineer with 12+ years in cloud infrastructure and financial governance — 5 years building Azure environments, 6+ years optimizing them. Delivered £624K annualized savings for a UK water utility through architecture redesign and FinOps practice implementation. Built showback/chargeback frameworks and custom Power BI cost analytics for a European insurer governing 3,000+ Azure resources across multi-subscription environments. Deep understanding of Azure commercial constructs (EA/MCA/CSP licensing) gained through Microsoft-side consulting. Specialist in FinOps lifecycle execution: Inform → Optimize → Operate.
+Azure FinOps engineer with **12+ years** in cloud infrastructure and financial governance — 5 years building Azure environments, 6+ years optimising them. That builder-to-optimizer arc means I understand exactly where cloud waste hides, because I spent years provisioning the infrastructure that creates it.
+
+Delivered **£624K annualised savings** for a UK water utility through architecture redesign and FinOps practice implementation. Built **showback/chargeback frameworks** and custom **Power BI cost analytics** for a European insurer governing **3,000+ Azure resources** across multi-subscription environments. Deep understanding of **Azure commercial constructs** (EA/MCA/CSP licensing) gained through Microsoft-side consulting. Specialist in **FinOps lifecycle execution**: Inform → Optimize → Operate.
 
 ---
 
 ## Key Achievements
 
-- **£624K annualized savings** — Redesigned Azure architecture and governance for a UK water services organisation, achieving £52K/month sustained savings through policy optimization, rightsizing, and chargeback implementation
-- **3,000+ Azure resources governed** — Led FinOps operations across multiple international clients (European insurance, UK utilities) with Azure Policy, RBAC, and Management Groups at scale
-- **Microsoft CEO recognition** — Contributed to an application recognised by Satya Nadella during public keynotes, demonstrating production-grade solution delivery
+### £624K/yr — Cost Savings Delivered
+Redesigned Azure architecture and governance for a UK water services organisation, achieving £52K/month sustained savings through policy optimisation, rightsizing, and chargeback implementation.
+
+### 3,000+ — Azure Resources Governed
+Led day-to-day FinOps operations across multiple international clients (European insurance, UK utilities) with Azure Policy, RBAC, and Management Groups at scale.
+
+### Microsoft CEO Recognition
+Contributed to an application recognised by Satya Nadella during public keynotes — demonstrating production-grade solution delivery at platform-vendor quality.
+
+---
+
+## FinOps Approach
+
+**Inform → Optimize → Operate**
+
+- **Inform:** Cost visibility via Power BI dashboards, Azure Cost Management APIs, tagging governance, allocation & showback/chargeback models
+- **Optimize:** Rightsizing, RI/Savings Plans coverage, policy enforcement, anomaly detection, architecture redesign for cost efficiency
+- **Operate:** Budgeting, forecasting, stakeholder reporting cadence, continuous governance via Azure Policy, GreenOps & sustainability metrics
 
 ---
 
@@ -24,7 +41,7 @@ Azure FinOps engineer with 12+ years in cloud infrastructure and financial gover
 
 **Azure Infrastructure:** IaaS & PaaS Administration · Azure SQL (Single, Elastic Pools, Geo-Replication) · VMs, Storage, Networking, Backups · Azure Policy, RBAC, Management Groups · AKS Cost Allocation & Container FinOps · High Availability & DR Architecture · Cloud Migration & Modernization · Azure DevOps & CI/CD Pipelines
 
-**Analytics & Automation:** Power BI Cost Dashboards & Reporting · Azure Cost APIs & KQL (Kusto Query) · ARM Templates, Bicep & Terraform (IaC) · PowerShell & Python Scripting · Azure Data Factory & MySQL · PowerApps & Power Automate · Microsoft Dynamics CRM & SharePoint
+**Analytics & Automation:** Power BI Cost Dashboards & Reporting · Azure Cost APIs & KQL (Kusto Query) · ARM Templates, Bicep & Terraform (IaC) · PowerShell & Python Scripting · Azure Data Factory & MySQL · PowerApps & Power Automate · Microsoft Dynamics CRM & SharePoint · On-Premises to Cloud Data Migration
 
 ---
 
@@ -38,8 +55,8 @@ Azure FinOps engineer with 12+ years in cloud infrastructure and financial gover
 - Designed and deployed custom Power BI dashboards consuming Azure Cost Management APIs, delivering real-time cost visibility, anomaly detection, and trend analysis to engineering, finance, and leadership stakeholders
 - Implemented showback/chargeback models with allocation based on tagging, labels, and custom dimensions — achieving full spend transparency and accountability across business units
 - Established budgeting, forecasting, and alerting frameworks with monthly forecast cycles, enabling proactive cost control and early anomaly detection
-- Executed rightsizing initiatives across compute, storage, backup, and networking — reducing waste through utilization analysis and resource optimization recommendations
-- Managed Reserved Instance portfolio and Azure Savings Plans, maintaining high coverage and utilization rates through continuous commitment optimization
+- Executed rightsizing initiatives across compute, storage, backup, and networking — reducing waste through utilization analysis and resource optimisation recommendations
+- Managed Reserved Instance portfolio and Azure Savings Plans, maintaining high coverage and utilization rates through continuous commitment optimisation
 - Enforced tagging compliance via Azure Policy, improving resource attribution from baseline to high compliance across all subscriptions
 
 **UK Water Services Client — Cloud Cost Transformation (£624K/yr savings)**
@@ -68,11 +85,23 @@ Azure FinOps engineer with 12+ years in cloud infrastructure and financial gover
 - Provisioned and managed Azure IaaS/PaaS environments, designing high availability and DR architectures with Availability Zones and redundancy strategies
 - Designed and administered Azure SQL PaaS (Single Database, Elastic Pools, Geo-Replication) with automated scale-up/scale-down scripting for optimal resource utilization and cost efficiency
 - Led on-premises to Azure SQL migrations with performance, security, and cost optimisation — building database cost expertise that later informed FinOps governance
-- Built end-to-end Power BI dashboards for global clients and Government of India organisations, delivering actionable data insights
+- Built end-to-end Power BI dashboards for global clients and Government of India organisations
 - Developed and deployed Azure AI services with predictive models for agriculture and healthcare domains
 - Architected PowerApps mobile applications with automated workflows via Microsoft Power Automate
 - Implemented CI/CD pipelines across multiple environments with automated testing and release management
 - Contributed to an application recognised by Microsoft CEO Satya Nadella during public keynotes
+
+---
+
+## Professional References
+
+> "Sai Krishna transformed how we understand our Azure spend. The dashboards he built gave us visibility we never had before, and the chargeback model he implemented drove real accountability across teams."
+> — Engagement Manager, Infosys — European Insurance Client
+
+> "His ability to redesign our Azure architecture while simultaneously building the governance framework was exactly what we needed. The £52K/month savings spoke for themselves."
+> — Technical Lead, UK Water Services Client
+
+*Full contact details available on request.*
 
 ---
 
@@ -91,4 +120,4 @@ Azure FinOps engineer with 12+ years in cloud infrastructure and financial gover
 
 ---
 
-*Resume: [duvvurs.github.io](https://duvvurs.github.io) · GitHub: [github.com/duvvurs](https://github.com/duvvurs)*
+🔗 [duvvurs.github.io](https://duvvurs.github.io) · [github.com/duvvurs](https://github.com/duvvurs)
