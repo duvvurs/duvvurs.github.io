@@ -231,7 +231,7 @@
       <button class="btn-g" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
       </button>
-      <a href="mailto:duvvurs@outlook.com" class="btn btn-o">Contact</a>
+      <button class="btn btn-o" id="contactBtn" onclick="copyContact()">Contact</button>
       <button class="btn btn-p" onclick="window.print()">
         <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align:-2px;margin-right:3px"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>PDF
       </button>
@@ -489,6 +489,18 @@
   </button>
 
   <script>
+    // Contact copy
+    function copyContact(){
+      const info='Duvvur Sai Krishna\nEmail: duvvurs@outlook.com\nPhone: +32 465 43 0680\nLocation: Belgium\nLinkedIn: https://linkedin.com/in/';
+      navigator.clipboard.writeText(info).then(()=>showToast('Contact info copied to clipboard')).catch(()=>{
+        const ta=document.createElement('textarea');ta.value=info;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);showToast('Contact info copied to clipboard')
+      })
+    }
+    function showToast(msg){
+      let t=document.getElementById('toast');if(!t){t=document.createElement('div');t.id='toast';t.style.cssText='position:fixed;bottom:80px;right:24px;background:#0f172a;color:#f8fafc;padding:12px 20px;border-radius:8px;font-size:13px;font-weight:500;z-index:200;opacity:0;transition:opacity .3s;box-shadow:0 4px 12px rgba(0,0,0,0.15)';document.body.appendChild(t)}
+      t.textContent=msg;t.style.opacity='1';clearTimeout(t._timer);t._timer=setTimeout(()=>t.style.opacity='0',2500)
+    }
+
     // Theme toggle
     function toggleTheme(){const t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t)}
     if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');
